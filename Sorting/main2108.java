@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
-//¹Ì¿Ï
+//changed
 public class main2108 {
 
 	public static void main(String[] args) throws  IOException {
