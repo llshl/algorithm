@@ -1,4 +1,4 @@
-package Programmers;
+package Greedy;
 
 public class 주식가격 {
 
