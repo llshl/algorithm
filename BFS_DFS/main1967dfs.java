@@ -41,15 +41,15 @@ public class main1967dfs {
 		}
 		
 		for(int i=0;i<graph[1].size();i++) {
-			visit[1] = true;
+			//visit[1] = true;
 			dfs(graph[1].get(i).num, graph[1].get(i).weight);
-			visit[1] = false;
+			//visit[1] = false;
 		}
 		maxWeight = 0;
 		for(int i=0;i<graph[maxNode].size();i++) {
-			visit[maxNode] = true;
+			//visit[maxNode] = true;
 			dfs(graph[maxNode].get(i).num,graph[maxNode].get(i).weight);
-			visit[maxNode] = false;
+			//visit[maxNode] = false;
 		}
 		System.out.println(maxWeight);
 	}
@@ -58,9 +58,9 @@ public class main1967dfs {
 		visit[n] = true;
 		for(int i=0;i<graph[n].size();i++) {
 			if(visit[graph[n].get(i).num] == false) {
-				visit[graph[n].get(i).num] = true;
+				//visit[graph[n].get(i).num] = true;
 				dfs(graph[n].get(i).num,weight+graph[n].get(i).weight);
-				visit[graph[n].get(i).num] = false;
+				//visit[graph[n].get(i).num] = false;
 			}
 		}
 		if(maxWeight < weight) {
