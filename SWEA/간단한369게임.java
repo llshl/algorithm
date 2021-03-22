@@ -2,7 +2,7 @@ package temp;
 
 import java.util.Scanner;
 
-public class °£´ÜÇÑ369°ÔÀÓ {
+public class Â°Â£Â´ÃœÃ‡Ã‘369Â°Ã”Ã€Ã“ {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -13,7 +13,6 @@ public class °£´ÜÇÑ369°ÔÀÓ {
 		for(int i=1;i<=N;i++) {
 			temp = Integer.toString(i);
 			if((temp).contains("3") ||(temp).contains("6") ||(temp).contains("9")) {
-			//if((i+"").contains("3") ||(i+"").contains("6") ||(i+"").contains("9")) {
 				for(int j=0;j<(i+"").length();j++) {
 					if(temp.charAt(j) == '3' || temp.charAt(j) == '6' || temp.charAt(j) == '9') {
 						cnt++;
