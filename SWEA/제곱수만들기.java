@@ -23,12 +23,12 @@ public class 제곱수만들기 {
 		}
 		//10000000의 제곱근까지의 소수를 list에 넣음
 		int T = sc.nextInt();
-	        for(int t=1;t<=T;t++){
+	    for(int t=1;t<=T;t++){
 	        int N = sc.nextInt();
-	        int answer = 1;
+	        long answer = 1;
 	        for(int a : list) {
-	        	//10000000제곱근까지 소수를 다 볼필요 없으므로 N보다 a가 커지면 컷
-	        	if(a>N) {
+	        	//10000000제곱근까지 소수를 다 볼필요 없으므로 N보다 a가 커지면 끝
+	        	if(a>N || N==1) {
 	        		break;
 	        	}
 	        	//어떤 소수로 나누어 떨어지면 몇번 나눌수있는지 확인
@@ -42,6 +42,9 @@ public class 제곱수만들기 {
         			answer *= a;
         		}
         	}
+	        if(N>1) {
+	        	answer *= N;
+	        }
 	        System.out.println("#"+t+" "+answer);
         }
 	}
