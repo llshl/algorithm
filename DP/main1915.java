@@ -22,7 +22,7 @@ public class main1915 {
 					dp[i][j] = 1;
 				}
 			}
-		}
+		}//
 		int answer = 0;
 		for(int i=1;i<=N;i++) {
 			for(int j=1;j<=M;j++) {
