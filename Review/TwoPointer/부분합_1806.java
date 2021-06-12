@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class ºÎºÐÇÕ_1806 {
+public class ë¶€ë¶„í•©_1806 {
 	static int N,S;
 	static int[] arr;
 	public static void main(String[] args) throws IOException {
@@ -26,16 +26,16 @@ public class ºÎºÐÇÕ_1806 {
 		int sum = 0;
 		int answer = N+1;
 		for(int L=1;L<=N;L++) {
-			//LÀ» ÇÑÄ­¾¿ ÀÌµ¿
-			sum -= arr[L-1];	//¹è¿­ÀÇ Ã¹ ÀÎµ¦½º´Â 1ºÎÅÍ ½ÃÀÛÀÌ´Ï 0¹øÂ° ÀÎµ¦½º »©°í ½ÃÀÛÇØµµ 0»©´Â°Í
+			//Lì„ í•œì¹¸ì”© ì´ë™
+			sum -= arr[L-1];	//ë°°ì—´ì˜ ì²« ì¸ë±ìŠ¤ëŠ” 1ë¶€í„° ì‹œìž‘ì´ë‹ˆ 0ë²ˆì§¸ ì¸ë±ìŠ¤ ë¹¼ê³  ì‹œìž‘í•´ë„ 0ë¹¼ëŠ”ê²ƒ
 			
-			//RÀ» °¥¼öÀÖ´Â¸¸Å­ ÀÌµ¿
+			//Rì„ ê°ˆìˆ˜ìžˆëŠ”ë§Œí¼ ì´ë™
 			while(sum < S && R < N) {
 				R++;
 				sum += arr[R];
 			}
 			
-			//ÃÖ¼Ò±æÀÌ °»½Å
+			//ìµœì†Œê¸¸ì´ê°±ì‹ 
 			if(sum >= S) {
 				answer = Math.min(answer, R-L+1);
 			}
