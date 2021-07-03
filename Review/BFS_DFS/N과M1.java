@@ -2,7 +2,8 @@ package BFS_DFS;
 
 import java.util.Scanner;
 
-public class N°úM1 {
+
+public class NÂ°ÃºM1 {
 
 	static int N,M;
 	static int[] arr;
