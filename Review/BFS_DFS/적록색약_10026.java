@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Àû·Ï»ö¾à_10026 {
+public class Ã€Ã»Â·ÃÂ»Ã¶Â¾Ã _10026 {
 	static int N;
 	static int answer1 = 0;
 	static int answer2 = 0;
@@ -79,5 +79,4 @@ public class Àû·Ï»ö¾à_10026 {
 		}
 		return false;
 	}
-
 }
